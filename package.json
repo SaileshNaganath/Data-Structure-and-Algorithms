@@ -1,0 +1,19 @@
+{
+  "name": "data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "all dsa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaileshNaganath/Data-Structures-and-Algorithms.git"
+  },
+  "author": "Sailesh Naganath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaileshNaganath/Data-Structures-and-Algorithms/issues"
+  },
+  "homepage": "https://github.com/SaileshNaganath/Data-Structures-and-Algorithms#readme"
+}
