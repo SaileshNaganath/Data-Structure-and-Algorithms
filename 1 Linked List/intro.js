@@ -6,4 +6,6 @@ class Node{
 }
 
 let node = new Node(10);
+let node2 = new Node (20);
+node.next = node2;
 console.log(node);
