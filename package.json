@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SaileshNaganath/Data-Structures-and-Algorithms.git"
+    "url": "git+https://github.com/SaileshNaganath/Data-Structure-and-Algorithms.git"
   },
   "author": "Sailesh Naganath",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SaileshNaganath/Data-Structures-and-Algorithms/issues"
+    "url": "https://github.com/SaileshNaganath/Data-Structure-and-Algorithms/issues"
   },
-  "homepage": "https://github.com/SaileshNaganath/Data-Structures-and-Algorithms#readme"
+  "homepage": "https://github.com/SaileshNaganath/Data-Structure-and-Algorithms#readme"
 }
