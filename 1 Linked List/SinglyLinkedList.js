@@ -62,13 +62,62 @@ class SinglyLinkedList{
     }
     print(){
         let current = this.head;
+        let result = "";
         while(current !=null){
-            console.log(current.data);
+            result += `${current.data}->`;
             current = current.next;
         }
+        console.log(result);
         console.log(`Length of Linked List ${this.length}`);
     }
-    
+    printElement(index){
+        if(index<0 || index>=this.length){
+            console.log(`linked list index is out of bound`);
+        }
+        else{
+            let current =this.head;
+            let count = 0 ;
+            while(current){
+                if(count == index){
+                    console.log(`Index-> ${index} Value-> ${current.data}`);
+                }
+                count++;
+                current = current.next;
+            }
+        }
+    }
+    removeAtStart(){
+        if(this.head == null){
+            console.log('Linked List is already empty');
+        }else{
+            let temp = this.head;
+            this.head =this.head.next;
+            temp = null;
+            this.length--;
+        }
+    }
+    removeAt(index){
+        if(index == 0 || index >= this.length){
+            console.log("Index is out of bound");
+        }
+        else{
+            let current,previous;
+            current = this.head;
+            //Traversal 
+            let count =0;
+            while(count<index){
+                count++;
+                previous = current;
+                current = current.next;
+            }
+            console.log(`Count after loop[ is ${count}`)
+            //delete current
+            console.log(`deleting ${current.data}`);
+            previous.next = current.next;
+            current = null;
+            this.length--;
+        }
+    }
 }
 
 const x = new SinglyLinkedList();
@@ -79,3 +128,4 @@ x.insertAtEnd(150);
 x.insertAtEnd(300);
 x.insertAtIndex(450,2);
 x.print();
+x.printElement(2);
